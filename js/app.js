@@ -10,7 +10,7 @@ app.factory("Auth", function ( $firebaseAuth) {
 
 app.controller("AuthCtrl", function ($scope, Auth) {
     $scope.logIn= function () {
-        Auth.$authWithOAuthPopup("github").then(function (authData) {
+        Auth.$authWithOAuthPopup("facebook").then(function (authData) {
             console.log(authData);
         }).catch(function (error) {
             console.log(error);
