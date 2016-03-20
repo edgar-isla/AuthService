@@ -4,7 +4,7 @@
 var app= angular.module("serviceApp", ["firebase"]);
 
 app.factory("Auth", function ( $firebaseAuth) {
-    var ref= new Firebase("https://angularstarts.firebaseio.com");
+    var ref= new Firebase("https://luminous-torch-9391.firebaseio.com/");
      return $firebaseAuth(ref);
 });
 
